@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e1688b77c2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../images/YARAY2-removebg-preview.png" type="image/x-icon">
+    <title>YARAY</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        body{
+            height: 100svh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+            background-image: url(../images/pool.jpg);
+            backdrop-filter: brightness(.7);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 15px;
+
+        }
+        .booking-validation{
+            height: fit-content;
+            width: auto;
+            margin-top: 30vh;
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            color: black;
+            display: flex;
+            box-shadow: 5px 5px 5px rgba(0, 0,0 , .6);
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .booking-validation p{
+            font-size: 1.2rem;
+            text-align: center;
+            color: red;
+        }
+        .booking-validation > div > a{
+            font-size: 1.7rem;
+            color: black;
+            cursor: pointer;
+        }
+        .booking-validation p i:nth-child(2){
+            font-size: 1.7rem;
+           
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="booking-validation">
+        <h2>Registration Validation</h2>
+        <p>Sorry, No available rooms for the specified info you entered !</p>
+        <div id="link_home">
+            <a href="page1.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+    
+    </div>
+    <script>
+        setTimeout(function(){
+            window.location.href = "page1.html";
+          }, 2500);
+    </script>
+</body>
+</html>

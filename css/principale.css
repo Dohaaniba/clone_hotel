@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200&display=swap');
+
+.landing-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/pool.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Calque semi-transparent */
+.landing-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Couleur sombre semi-transparente */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.name{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.name h2{
+  color: black;
+  font-size: 25px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    /*allignement verticale */
+    justify-content: space-between;
+    /*alignement horizontale */
+    backdrop-filter: blur(10px);
+    /* Appliquer l'effet de flou */
+    background-color: rgba(206, 192, 192, 0.5);
+    /* Faire un fond semi-transparent */
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    border-bottom: solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-bottom-width: 0.5px;
+
+}
+
+.logo {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-family: 'Great Vibes', sans-serif;
+    margin-right: auto;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding: 10px 2px 10px;
+    margin: 0;
+    margin-bottom: 50px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 25px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+
+
+
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(31, 30, 30);
+    transform: scaleX(0);
+    transition: transform 0.6s ease;
+    transform-origin: left;
+
+
+
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+
+}
+
+content {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 120px;
+    padding: 20px 15px;
+    margin-top: 80px;
+    color: white;
+    /* Définir la couleur du texte en blanc */
+    position: relative;
+    /* Ajouter cette propriété pour gérer le z-index */
+    z-index: 1;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    padding: 123px 0 0px 0;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center; 
+    margin-bottom: 20px;
+
+}
+
+.enjoy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 20px;
+    
+}
+
+.formulaire1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer horizontalement les éléments du formulaire */
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  
+}
+
+.formulaire1 form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer horizontalement les champs de saisie et les listes déroulantes */
+  width: 100%;
+  gap: 60px;
+}
+
+#date {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  padding: 0 50px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  height:40px;
+  /* Ajouter les styles pour rendre l'input transparent */
+}
+
+.formulaire1 input[type="date"] {
+  /* Styles pour les champs de saisie (input) */
+  background-color: transparent; /* Rendre le fond transparent */
+  border: 1px solid #ccc; /* Bordure */
+  padding: 10px; /* Espacement interne */
+  margin: 10px;
+  font-size: 16px; /* Taille de la police */
+  color: #333; /* Couleur du texte */
+  outline: none; /* Supprimer l'effet de focus */
+}
+
+/* Styles pour les champs de saisie lorsqu'ils ont le focus */
+.formulaire1 input[type="date"]:focus {
+  border-color: #4CAF50; /* Couleur de la bordure lorsque le champ a le focus */
+}
+
+/* Styles pour les listes déroulantes personnalisées (custom-select) */
+.custom-select {
+  /* Styles pour les listes déroulantes personnalisées */
+  margin-right: 10px; /* Espacement entre les listes déroulantes */
+}
+
+
+.formulaire1 select {
+  font-size: .9375rem;
+  color: white;
+  max-height: 200px;
+  /* Hauteur maximale de la liste d'options */
+  overflow-y: auto;
+  /* Barre de défilement verticale si nécessaire */
+  border: 1px solid #ccc;
+  /* Bordure */
+  border-radius: 4px;
+  /* Coins arrondis */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Couleur de fond */
+  list-style: none;
+  padding: 0 50px;
+}
+
+option {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+#choose1{
+  padding: 10px 20px;
+  margin-bottom: 10px;
+ margin-top: 9px;
+  height: 40px;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0px 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px; 
+  line-height: 20px; 
+  height: 50px;
+  width: 150px;
+  
+}
+
+@media (max-width: 768px) {
+  .menu {
+      display: none; /* Masquer le menu principal */
+  }
+
+  .barre {
+      display: block; /* Afficher l'icône de menu */
+  }
+
+  .menu.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: rgba(206, 192, 192, 0.5);
+      padding: 20px;
+  }
+}

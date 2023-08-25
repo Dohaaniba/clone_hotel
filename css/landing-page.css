@@ -1,0 +1,239 @@
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 8% 1% 0%;
+    z-index: 1000000;
+    background-color: #ffffff99;
+    backdrop-filter: blur(20px);
+    border-bottom: #ffffff13 solid;
+    border-bottom-width: 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.265);
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+  .name h2{
+    color: black;
+    font-size: 25px;
+  }
+
+.name i{
+    color: #000000;
+    font-size: 20px;
+    margin-right: 10px;
+    
+}
+.icone{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-right: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 20px;
+}
+nav a:hover{
+    color: black;
+}
+nav a::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: -1%;
+    background-color: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.4s ease;
+}
+
+nav a:hover::after{
+    transform: scaleX(1);
+}
+.landing-page {
+    height: 100svh;
+    width: 100%;
+    background-image: url(../images/pool.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:  100svh;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+/* Calque semi-transparent */
+.section-formulaire{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.345);
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+/*le formulaire*/
+
+.title{
+    
+     color: #ffffff;
+    width: 100%;
+    margin: 10rem 4rem 4rem 4rem;
+    
+}
+.title h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.title h3{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-top: 1.4rem;
+    margin-block-end: 1.4rem;
+    text-align: center;
+}
+.formulaire1{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 290px;
+}
+.formulaire1 form{
+    gap:3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.formulaire1 form input,select{
+    height: 3rem;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    min-width: 250px;
+    border-radius: .5rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    border-width: 1px;
+    padding-left: .5rem;
+    outline: none;
+    margin-bottom: .3rem;
+    cursor: pointer;
+    
+}
+.formulaire1 form select option{
+    background-color: rgba(0, 0, 0, 0.3);
+    color:black;
+}
+.formulaire1 form button{
+    height: 3rem;
+    cursor: pointer;
+    width: 160px;
+    border-radius: .5rem;
+    border: solid rgb(247, 247, 247);
+    border-radius: 15px;
+    border-width: 1px;
+    outline: none;
+    background: rgba(10, 10, 10, 0.444);
+    padding-left: .8rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.drop-down-menu{
+    display: none;
+    position: absolute;
+    height: 0;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background-color:rgba(206, 192, 192, 0.5) ;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.drop-down-menu.open{
+    height: 240px;
+}
+.drop-down-menu a{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.drop-down-menu a:hover{
+    color: black;
+}
+
+
+
+/* Media query pour le nav */
+@media  (max-width:792px) {
+    #nav-bar{
+        display: none;
+    }
+    .icone{
+        display: block;
+        margin-left: 20px;
+    }
+    .drop-down-menu{
+        display: block;
+    }
+}
+ @media (max-width:623px){
+        .landing-page{
+            height: auto;
+        }
+        .section-formulaire{
+            height:auto;
+        }
+       
+        .formulaire1{
+            
+            bottom: 1rem;
+            width: 90%;
+        }
+        .formulaire1 form{
+            flex-direction: column;
+        }
+        .formulaire1 form input , select{
+            width: 90%;
+        }
+
+    }

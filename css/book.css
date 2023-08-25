@@ -1,0 +1,256 @@
+.book{
+    background-image: url(../images/silhouette-palm-tree-with-umbrella.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    
+}
+.sombre{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: -2rem;
+    padding: 3rem;
+}
+.icones{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.icones i{
+    font-size: 3.5rem;
+    color: white;
+}
+.swim .beach .food{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 200px;
+}
+.icones p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+
+}
+
+.formulaire2{
+    background-color:rgba(0, 0, 0, 0.357);
+    width: 100%;
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 20px 5px 15px 5px;
+    padding: 0px 10px 3px 74px;
+}
+.formulaire2 label {
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 4px;
+}
+.formulaire2 select option {
+    color: rgb(68, 56, 56);
+    background-color: rgba(253, 253, 253, 0.312);
+}
+#first{
+    margin-top: 15px;
+}
+#last{
+    margin-bottom: 15px;
+}
+
+.box{
+    position: relative;
+    margin-bottom: 18px;
+}
+#phone_number{
+    height: 47px;
+
+}
+#datee{
+    gap:40%;
+}
+#first{
+    margin-top: 21px;
+}
+#last{
+    margin-bottom: 15px;
+}
+.box1 select{
+    font-size: 1.1rem;
+}
+.box input{
+    outline: none;
+    width: 100%;
+    font-size: 1.1rem;
+    height: 2.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    border-bottom-left-radius: -10px;
+}
+.box  label{
+    position: absolute;
+    left: 5px;
+    top: 20%;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.661);
+    transition: all 0.3s;
+}
+.cin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.cin input{
+    outline: none;
+    width: 50%;
+    font-size: 1.1rem;
+    height: 2.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    border-bottom-left-radius: -10px;
+}
+
+.cin label{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.661);
+    transition: all 0.3s;
+}
+.cin input::placeholder{
+    color: white;
+}
+.cin input:focus ~ label,
+.cin input:valid ~ label{
+    transform: translateY(-10%) translateX(-5%);
+    color: white;
+}
+.box input:focus ~ label,
+.box input:valid ~ label{
+    transform: translateY(-150%) translateX(-5%);
+    color: white;
+}
+.enregistrement{
+    width: 100%;
+    display: flex;
+    gap: 30%;
+    
+}
+.box .box1{
+    width: 49%;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.box1 input{
+    height: 2.4rem;
+    outline: none;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid white 1px;
+    color: white;
+
+}
+.box1 select{
+    border: none;
+    outline: none;
+    border-bottom: solid white 1px;
+    background-color: transparent;
+   
+}
+
+
+.formulaire2 option{
+    background-color: rgba(0, 0, 0, 0.389);
+    color: white;
+    
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.btnn{
+    border: solid rgb(255, 255, 255) ;
+    cursor: pointer; 
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.217);
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: .5rem 1.6rem .5rem 1.6rem;
+}
+.btn3{
+    border: solid rgb(255, 255, 255) ;
+    cursor: pointer; 
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.217);
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: .5rem 1.6rem .5rem 1.6rem;
+    margin-top: 2rem;
+}
+@media screen and (max-width:700px){
+    .book{
+        height: auto;
+    }
+    .sombre{
+        height: auto;
+    }
+    .icones{
+        display: flex;
+        flex-direction:column ;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .formulaire2{
+        bottom: 1rem;
+        width: 110%;
+        padding: 1rem;
+    }
+    .formulaire2 form{
+        flex-direction: column;
+
+    }
+    .formulaire2 form input,select{
+        width: 90%;
+    }
+    
+    .enregistrement{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box , .box1,.cin input{
+        width: 95%;
+    }
+}

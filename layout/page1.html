@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaray</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/landing-page.css">
+    <link rel="stylesheet" href="../css/Gallery.css">
+    <link rel="stylesheet" href="../css/caroussele.css">
+    <link rel="stylesheet" href="../css/book.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/styles/splide.min.css">
+    <script src="/styles/splide.min.js"></script>
+    <script src="https://kit.fontawesome.com/e1688b77c2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+
+</head>
+<body>
+    
+        <header >
+            <div class="name">
+                <i class="fa-solid fa-hotel"></i>
+                <h2>Yaray</h2>
+            </div>
+           
+            <nav id="nav-bar">
+                <a href="#home">Home</a>
+                <a href="#Gallery">Gallery</a>
+                <a href="#book">Book</a>
+                <a href="#contact">Contact</a>
+                <a href="#admins">admins</a>
+            </nav>
+            <div class="icone">
+                <i class="fa-solid fa-bars"></i>
+            </div>   
+        
+        <div class="drop-down-menu ">
+            <a href="#home">Home</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#book">Book</a>
+            <a href="#contact">Contact</a>
+            <a href="#admins">admins</a>
+        </div>
+    </header>
+    <section class="landing-page" id="home">
+        <div class="section-formulaire">
+                <div class="title">
+                    <h1 >Unique Experience</h1>
+                    <h3 >---ENJOY WITH US---</h3>
+                </div>
+               
+                <div class="formulaire1">
+                    <form action="form1.php" method="post">
+                       
+                            <input type="date" id="date" name="date1" required>
+                            <input type="date" id="date2" name="date2" required>
+                       
+                                    <select name="choose_adult" id="choose1">
+                                        <option selected="selected" value="1">1 </option>
+                                        <option value="2">2 </option>
+                                        <option value="3">3 </option>
+                                        
+                                    </select>
+                             
+                                    <select name="choose_child" id="choose1">
+                                        <option selected="selected" value="0">None</option>
+                                        <option value="1">1 </option>
+                                        <option value="2">2 </option>
+                                        
+                                    </select>
+                                    <select name="choose_room" id="choose1">
+                                        <option selected="selected" value="1">single </option>
+                                        <option value="2">double </option>
+                                        
+                                    </select>
+                             
+                        
+                    <button class="btn" id="check" type="submit">Check Availabilty</button>
+                    
+    
+    
+                    </form>
+                </div>
+        </div>
+    </section>
+    <section class="Gallery" id="Gallery">
+        <div class="content">
+            <hr>
+            <h3>Our Gallery</h3>
+            <hr>
+        </div>
+
+        <div class="container" id="container1">
+            <div class="photo">
+                <img id="img1" src="../images/luxury-classic-modern-bedroom-suite-hotel (1).jpg" alt="">
+            
+                <div class="description" id="description1">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="#" class="btn1">book now</a>
+                </div>
+                <div class="bordure" ></div>
+            </div>
+        </div>
+        <div class="container" >
+            <div class="photo">
+                <img src="../images/home_page.jpg" alt="">
+            
+                <div class="description" id="description1">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="#" class="btn1">book now</a>
+                </div>
+                <div class="bordure" id="bordure1"></div>
+            </div>
+        </div>
+        <div class="container" id="container1">
+            <div class="photo">
+                <img id="img1" src="../images/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table.jpg" alt="">
+            
+                <div class="description" id="description1">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="#" class="btn1">book now</a>
+                </div>
+                <div class="bordure"></div>
+            </div>
+        </div>
+        <section id="hotel">
+            <div class="containerr">
+              <h3 style="font-size: 2.5rem;" class="text-center section-subheading">- Showcase -</h3>
+              <h1 style="font-family: Great Vibes;" class="text-center section-heading">The YARAY Hotel</h1>
+            </div>
+            <div class="containerr" style="padding: 0;">
+              <div class="swiper hotel-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slide-start -->
+                  <div class="swiper-slide hotel-slide">
+                    <div class="hotel-slide-img">
+                      <img src="../images/luxury-classic-modern-bedroom-suite-hotel (1).jpg" alt="hotel">
+                    </div>
+                    <div class="hotel-slide-content">
+                      <div class="hotel-slide-content-bottom">
+                        <h2 class="room-name">
+                          Double room
+                        </h2>
+                        <h3 class="room-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide hotel-slide">
+                    <div class="hotel-slide-img">
+                      <img src="../images/home_page.jpg" alt="hotel">
+                    </div>
+                    <div class="hotel-slide-content">
+                      <div class="hotel-slide-content-bottom">
+                        <h2 class="room-name">
+                          Double room
+                        </h2>
+                        <h3 class="room-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide hotel-slide">
+                    <div class="hotel-slide-img">
+                      <img src="../images/scenic-view-sandy-beach-beach-with-sun-beds-umbrellas-open-against-sea-mountains-hotel-resort-tekirova-kemer-turkey.jpg" alt="hotel">
+                    </div>
+                    <div class="hotel-slide-content">
+                      <div class="hotel-slide-content-bottom">
+                        <h2 class="room-name">
+                          Beache View
+                        </h2>
+                        <h3 class="room-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide hotel-slide">
+                    <div class="hotel-slide-img">
+                      <img src="../images/white-bedroom-hotel.jpg" alt="hotel">
+                    </div>
+                    <div class="hotel-slide-content">
+                      <div class="hotel-slide-content-bottom">
+                        <h2 class="room-name">
+                          Single room
+                        </h2>
+                        <h3 class="room-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide hotel-slide">
+                    <div class="hotel-slide-img">
+                      <img src="../images/white-sink-faucet-water-tap-decoration-bathroom.jpg" alt="hotel">
+                    </div>
+                    <div class="hotel-slide-content">
+                      <div class="hotel-slide-content-bottom">
+                        <h2 class="room-name">
+                          Bath room
+                        </h2>
+                        <h3 class="room-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+      
+                </div>
+      
+                <div class="hotel-slider-control">
+                  <div class="swiper-button-prev slider-arrow">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                  </div>
+                  <div class="swiper-button-next slider-arrow">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+      
+              </div>
+            </div>
+          </section>
+        <!-- end -->
+    </section>
+    
+<!-- courasel and shit -->
+
+    <section class="book" id="book">
+        <div class="sombre">
+        <div class="icones">
+            <div class="swim">
+                <i class="fa-solid fa-person-swimming"></i>
+                <p>lorem ipsum doler</p>
+            </div>
+            <div class="beach">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <p>lorem ipsum doler</p>
+            </div>
+            <div class="food">
+                <i class="fa-solid fa-utensils"></i>
+                <p>lorem ipsum doler </p>
+            </div>
+        </div>
+        <div class="formulaire2">
+            <form action="form2.php" method="post">
+                <div class="enregistrement" id="first">
+                    <div class="box" >
+                        <input class="Input" name="client_name" type="text" required>
+                        <label for="">your name</label>
+                    </div>
+                    <div class="box">
+                        <label for="">your email</label>
+                        <input class="Input" name="client_email" type="email" required>
+                    </div>
+                </div>
+                    <div class="enregistrement">
+                        <div class="box1" >
+                            <label for="">room-type</label>
+                            <select name="room_tyme" id="room" required>
+                                <option value="single">Single</option>
+                                <option value="Double">Double</option>
+                            </select>
+                        </div>
+                        <div class="box1">
+                            <label for="">phone number</label>
+                            <input type="number" name="phone_number" id="phone_number">
+                        </div>
+                    </div>
+                    <div class="enregistrement" id="datee">
+                        <div class="box1">
+                           <label for="">check-in</label>
+                           <input type="date" name="check_in" placeholder="dd/mm/yyyy" required>
+                        </div>
+                        <div class="box1">
+                            <label for="">check-out</label>
+                            <input type="date" name="check_out" placeholder="dd/mm/yyyy" required>
+                         </div>
+                    </div>
+                    <div class="enregistrement" id="last">
+                        <div class="box1">
+                            <label for="">adults</label>
+                            <select id="inputbox1" name="number_of_adults" required>
+                                <option value="1">1 adult</option>
+                                <option value="2">2 adults</option>
+                                <option value="3">3 adults</option>
+                                <option value="4">4 adults</option>
+                                <option value="5">5 adults</option>
+                            </select>
+                        </div>
+                        <div class="box1" >
+                            <label for="">children</label>
+                            <select id="inputbox1" name="number_of_children" required>
+                                <option value="0">none</option>
+                                <option value="1">1 child</option>
+                                <option value="2">2 children</option>
+                                <option value="3">3 children</option>
+                                <option value="4">4 children</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cin">
+                        <input type="text" placeholder="your CIN" name="CIN" required>
+                      </div>
+                      <div class="btn2">
+                          <input type="submit" value="Book Now" class="btnn">
+                      </div>
+            </form>
+        </div>
+        <div class="persenal_infos">
+            <button class="btn3" onclick="window.location.href='enter_code.php'">See your reservation</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="also_sombre">
+            <div class="contentt">
+                <hr>
+                <h3>Contact Us</h3>
+                <hr>
+            </div>
+            <div class="formulaire3">
+                <form action="form3.php" method="post">
+                    <div class="box3">
+                        <input type="text" name="full_name" class="input" required placeholder="Full name">
+                        <input type="text" name="email_adress" class="input" required placeholder="email adress">
+                    </div>
+                    <div class="box3">
+                        <input type="number" class="input" required placeholder="Mobile Number" name="mobile_number">
+                        <input type="text" class="input" required name="Email_Subject" placeholder="Email Subject">
+                    </div>
+                    <textarea name="message" class="input" id="textt" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" id="messages" value="send message" >
+                </form>
+            </div>
+        </div>
+    </section>
+    <section style="display: flex;justify-content:center; margin-top:2rem; height: 100svh;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26615.807489247163!2d-7.625113600000001!3d33.5020032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1690929556765!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <footer>
+        <div class="foot">
+            <div class="footer1">
+                <div class="premier">
+                    <div class="unit1">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <p>facebook</p>
+                    </div>
+                    <div class="unit1">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <p>instagram</p>
+                    </div>
+                    <div class="unit1">
+                        <i class="fa-brands fa-whatsapp"></i>   
+                        <p>+212-62496-6492</p>
+                    </div>
+                    
+                </div>
+                <div class="logo_footer">
+                    <img src="../images/YARAY-removebg-preview.png" alt="">
+                </div>
+                <div class="deusieme">
+                    <div class="unit2">
+                        <p>+212-62496-6492</p>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="unit2">
+                        <p>yarayhotel23@gmail.com</p>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="unit2">
+                        <p>Casablanca,Maroc - 20000</p>
+                        <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copy-right">
+            <p>yarayhotel &COPY; website | all rights reserved </p>
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+                <p>home</p>
+            </a>
+        </div>
+      </footer>
+
+     
+     
+   
+      
+    
+    <script>
+        const icone = document.querySelector('.icone');
+        const iconei = document.querySelector('.icone i');
+        const drop_down_menu = document.querySelector('.drop-down-menu');
+
+
+        icone.onclick =function(){
+            drop_down_menu.classList.toggle('open');
+            const isOpen=drop_down_menu.classList.contains('open');
+            iconei.classList=isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+    <script>
+      function viewReservation(reservationId) {
+          window.location.href = 'enter_code.php?ucode=' + reservationId;
+      }
+  </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../javascript/reveal.js"></script>
+
+    <!-- swiper and shit -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../javascript/swiper.js"></script>
+    
+
+
+   
+</body>
+</html>

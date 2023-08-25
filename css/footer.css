@@ -1,0 +1,69 @@
+.foot{
+    background-color: rgba(66, 65, 65, 0.808);
+    width: 100%;
+    background-position: end;
+}
+.footer1{
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+}
+.premier{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1rem 1rem 3rem;
+}
+.deusieme{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 3rem 1rem 1rem;
+}
+.unit1,.unit2{
+    display: flex;
+    gap: 1rem;
+}
+.logo_footer img{
+    height:300px;
+}
+.unit1 i ,p{
+    color: white;
+    font-size: 1.2rem;
+}
+.unit2 i, p{
+    color: white;
+    font-size: 1.2rem;
+}
+.copy-right{
+    height: 100%;
+    background-color:  rgba(66, 65, 65, 0.808);
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+}
+.copy-right a{
+    position: absolute;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none; 
+}
+@media screen and (max-width:734px){
+    .footer1{
+        flex-direction: column;
+    }
+    .premier{
+        margin-right: 12rem;
+    }
+    .deusieme{
+        margin-left: 10rem;
+        margin-bottom: 2rem;
+       padding: 0;
+    }
+}
