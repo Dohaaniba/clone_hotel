@@ -33,7 +33,7 @@ $result = $con->query($sql);
 
     // Afficher un message en fonction des résultats de la requête
         if ($numRows > 0) {
-         echo "La chambre est disponible pour les informations que vous avez saisies.";
+            header('location:valide.php?');
         } else {
           echo "Désolé, aucune chambre n'est disponible pour les informations que vous avez saisies.";
         }
