@@ -5,3 +5,4 @@
 Check Room Availability: Easily check the availability of rooms for a specific date with a precise number of guests.
 Reservation Management: Reserve one or multiple rooms effortlessly.
 View Reservations: Visualize existing reservations.
+Modify and Delete Reservations: Flexibly edit or remove reservations as needed.
