@@ -1,5 +1,6 @@
-## Project Description
-This project is a clone of a friend's work, where I've utilized libraries like PHPMailer and Swiper JS, among others. It's a great learning experience that allowed me to explore various tools and techniques in web development.
+## Yaray
+ Yaray is a hotel reservation website designed to simplify the process of booking accommodations, ensuring a seamless experience for users.
 
-## Features
-Utilizes the PHPMailer library for efficient email handling. Implements Swiper JS to create dynamic and responsive image carousels. Includes various other libraries for enhanced functionality.
+# Features
+Check Room Availability: Easily check the availability of rooms for a specific date with a precise number of guests.
+Reservation Management: Reserve one or multiple rooms effortlessly.
