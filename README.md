@@ -8,3 +8,6 @@
 - Modify and Delete Reservations: Flexibly edit or remove reservations as needed.
 - Email Notification: Send emails to the admin using PHP Mailer.
 - View Room Categories: Explore the available room categories in the hotel.
+
+## Usage
+- Register or Log In: Access your TaskPro account.
