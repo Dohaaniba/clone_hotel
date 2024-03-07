@@ -10,4 +10,5 @@
 - View Room Categories: Explore the available room categories in the hotel.
 
 ## Usage
-- Register or Log In: Access your TaskPro account.
+1. Register or Log In: Access your TaskPro account.
+2. Check Room Availability: Determine room availability for your desired date and guest count.
