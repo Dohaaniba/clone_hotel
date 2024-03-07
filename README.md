@@ -10,5 +10,8 @@
 - View Room Categories: Explore the available room categories in the hotel.
 
 ## Usage
-1. Register or Log In: Access your TaskPro account.
-2. Check Room Availability: Determine room availability for your desired date and guest count.
+1. Check Room Availability: Determine room availability for your desired date and guest count.
+2. Make a Reservation: Reserve one or multiple rooms based on your requirements.
+3. View Reservations: See a comprehensive list of your reservations.
+4. Modify and Delete Reservations: Edit or remove reservations as necessary to accommodate changes.
+5. Email Notifications: Communicate with the admin using the integrated email feature.
