@@ -11,7 +11,8 @@
 
 ## Usage
 1. Check Room Availability: Determine room availability for your desired date and guest count.
-2. Make a Reservation: Reserve one or multiple rooms based on your requirements.
-3. View Reservations: See a comprehensive list of your reservations.
-4. Modify and Delete Reservations: Edit or remove reservations as necessary to accommodate changes.
-5. Email Notifications: Communicate with the admin using the integrated email feature.
+2. Explore Room Categories: Discover the diverse categories of rooms available in the hotel.
+3. Make a Reservation: Reserve one or multiple rooms based on your requirements.
+4. View Reservations: See a comprehensive list of your reservations.
+5. Modify and Delete Reservations: Edit or remove reservations as necessary to accommodate changes.
+6. Email Notifications: Communicate with the admin using the integrated email feature.
